@@ -6,12 +6,13 @@
 from __future__ import print_function
 
 import numpy as np
+import matplotlib.pyplot as plt
 from time import time
 
 # Let's take the randomness out of random numbers (for reproducibility)
 np.random.seed(0)
 
-size = 4096
+size = 2048
 A, B = np.random.random((size, size)), np.random.random((size, size))
 C, D = np.random.random((size * 128,)), np.random.random((size * 128,))
 E = np.random.random((int(size / 2), int(size / 4)))
@@ -62,5 +63,3 @@ delta = time() - t
 print("Eigendecomposition of a %dx%d matrix in %0.2f s." % (size / 2, size / 2, delta / N))
 
 print('')
-print('This was obtained using the following Numpy configuration:')
-np.__config__.show()

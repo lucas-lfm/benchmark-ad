@@ -19,8 +19,7 @@
 
 # Verifica e instala dependências, se necessário.
 sudo ./resources/install-dependencies.sh
-clear
 
-
+python3 resources/numpy-benchmark.py
 
 exit 0

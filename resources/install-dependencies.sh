@@ -36,6 +36,13 @@ if [[ $(which pip) ]]; then
 		echo "Instalação de módulo concluída!"
 		echo
 	fi
+	if [[ ! $(pip list | grep matplotlib) ]]; then
+		echo "Instalando módulo matplotlib..."
+		echo
+		pip install matplotlib
+		echo "Instalação de módulo concluída!"
+		echo
+	fi
 fi
 
 exit 0
