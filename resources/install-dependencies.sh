@@ -8,13 +8,13 @@
 # Data: 26/02/2021                                                              #
 #                                                                               #
 # Descrição: Verifica e instala as dependências necessárias para a execução do  #
-#		programa de benchmark.  					#
+#		programa de benchmark.  																										#
 #                                                                               #
 # Uso: ./install-dependencies.sh                                                #
 #                                                                               #
 #################################################################################
 
-if [[ ! $(which pip) ]]; then
+if [[ ! $(which pip3) ]]; then
 	echo "Baixando pip..."
 	echo
 	sudo wget https://bootstrap.pypa.io/get-pip.py
@@ -28,18 +28,18 @@ if [[ ! $(which pip) ]]; then
 	echo
 fi
 
-if [[ $(which pip) ]]; then
-	if [[ ! $(pip list | grep numpy) ]]; then
+if [[ $(which pip3) ]]; then
+	if [[ ! $(pip3 list | grep numpy) ]]; then
 		echo "Instalando módulo numpy..."
 		echo
-		pip install numpy
+		pip3 install numpy
 		echo "Instalação de módulo concluída!"
 		echo
 	fi
-	if [[ ! $(pip list | grep matplotlib) ]]; then
+	if [[ ! $(pip3 list | grep matplotlib) ]]; then
 		echo "Instalando módulo matplotlib..."
 		echo
-		pip install matplotlib
+		pip3 install matplotlib
 		echo "Instalação de módulo concluída!"
 		echo
 	fi
