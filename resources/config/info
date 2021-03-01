@@ -1,0 +1,13 @@
+Você pode escolher entre três níveis de Carga de Trabalho:
+Baixo:
+  - Utiliza operações em matrizes 512x512 para teste de CPU.
+  - Utiliza 400 MB de dados para teste de HD.
+  - Utiliza 512 MB de dados para teste de Memória Principal.
+Moderado:
+  - Utiliza operações em matrizes 1024x1024 para teste de CPU.
+  - Utiliza 800 MB de dados para teste de HD.
+  - Utiliza 1 GB de dados para teste de Memória Principal.
+Alto:
+  - Utiliza operações em matrizes 2048x2048 para teste de CPU.
+  - Utiliza 1.6 GB de dados para teste de HD.
+  - Utiliza 2 GB de dados para teste de Memória Principal.

@@ -17,12 +17,12 @@
 if [[ ! $(which pip) ]]; then
 	echo "Baixando pip..."
 	echo
-	wget https://bootstrap.pypa.io/get-pip.py
+	sudo wget https://bootstrap.pypa.io/get-pip.py
 	echo "Download finalizado!"
 	echo
 	echo "Instalando pip..."
 	echo
-	python3 get-pip.py
+	sudo python3 get-pip.py
 	rm get-pip.py
 	echo "Instalação concluída!"
 	echo
