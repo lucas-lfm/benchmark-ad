@@ -25,6 +25,8 @@ clear
 echo "======================================================================"
 echo "Relatório da Máquina: $HOSTNAME"
 echo "Data/Hora: $(date)"
+echo "Quantidade de Repetições do Teste: $1"
+echo "Nível da Carga de Trabalho do Teste: $2"
 echo "======================================================================"
 echo
 echo "Máquina ativa desde: $UPTIME"

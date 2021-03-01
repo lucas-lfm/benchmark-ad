@@ -52,6 +52,13 @@ python3 resources/benchmark-cpu.py $RPT $NIVEL
 ./resources/benchmark-hd.sh $RPT $NIVEL
 ./resources/benchmark-mem.sh $RPT $NIVEL
 
+clear
+
+./resources/RelatorioMaquina.sh $RPT $NIVEL
+
+echo
+echo
+
 python3 resources/resultado.py
 
 rm -f teste.txt
