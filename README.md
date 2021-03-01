@@ -5,7 +5,7 @@ O Benchmark-AD CLI é uma implementação de benchmark para análise de desempen
 Desenvolvido para ambientes Linux, utilizando as linguagens: Python e Shell Script.
 Executa uma série de operações de Álgebra Linear com inteiro e ponto flutuante a fim de analisar o desempenho da CPU da máquina. 
 Além disso, realiza testes de escrita e leitura no Disco Rígido e na memória principal. 
-Ao final, exibe grṕaficos e relatórios de desempenho com auxílio das bibliotecas Pandas, Numpy e Matplotlib.
+Ao final, exibe gráficos e relatórios de desempenho com auxílio das bibliotecas Pandas, Numpy e Matplotlib.
 
 Informações sobre seu funcionamento:
   - O módulo principal, benchmark-ad.sh, de interação com o usuário é desenvolvido em Shell Script, possibilitando seu uso no terminal;
