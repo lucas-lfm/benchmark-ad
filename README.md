@@ -47,7 +47,7 @@ Ao executar o script principal, automaticamente será feita a verificação das 
 
 
 O código pode ser modificado e utilizado livremente.
-Para as próximas versões, espara-se:
+Para as próximas versões, espera-se:
   - Implementar os módulos de benchmark seguindo as especificações da SPEC, utilizando métricas de velocidade e taxa, aplicando médias harmônicas e geométricas para determinação do score obtido em cada teste;
   - Implementar um módulo de comparação, responsável por comparar o desempenho da máquina de teste com uma máquina referência.
 
