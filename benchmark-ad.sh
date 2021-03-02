@@ -8,18 +8,18 @@
 # Data: 26/02/2021                                                              #
 #                                                                               #
 # Descrição: Executa uma série de operações aritméticas com inteiro e ponto     #
-#		flutuante a fim de analisar o desempenho da CPU da máquina. Além disso,     #
-#   realiza testes de escrita e leitura no HD e na memória principal.           #
-#   Ao final, exibe grṕaficos e relatórios de desempenho.                       #
+#		flutuante a fim de analisar o desempenho da CPU da máquina.     #
+#		Além disso, realiza testes de escrita e leitura no HD e 	#
+#		na memória principal. 						#
+#		Ao final, exibe grṕaficos e relatórios de desempenho.           #
 #                                                                               #
 # Uso: ./benchmark-lucas.sh [repeticoes] [nivel]                                #
 #                                                                               #
 #################################################################################
 
 # Verifica e instala dependências, se necessário.
-sudo ./resources/install-dependencies.sh
+./resources/install-dependencies.sh
 
-clear
 
 NIVEL=0
 RPT=0
@@ -48,7 +48,7 @@ else
   exit 1
 fi
 
-python3 resources/benchmark-cpu.py $RPT $NIVEL
+sudo python3 resources/benchmark-cpu.py $RPT $NIVEL
 ./resources/benchmark-hd.sh $RPT $NIVEL
 ./resources/benchmark-mem.sh $RPT $NIVEL
 

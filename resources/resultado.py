@@ -105,9 +105,9 @@ std_hd_e = df_resultados_hd["escrita"].std()
 std_hd_l = df_resultados_hd["leitura"].std()
 
 
-print("=========================================================================")
-print("                          Relatório de Teste                             ")
-print("=========================================================================")
+print("=======================================================================")
+print("                         Relatório de Teste                            ")
+print("=======================================================================")
 print()
 print("Resultados do Desempenho da CPU:")
 print()

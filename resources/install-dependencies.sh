@@ -8,12 +8,19 @@
 # Data: 26/02/2021                                                              #
 #                                                                               #
 # Descrição: Verifica e instala as dependências necessárias para a execução do  #
-#		programa de benchmark.  																										#
+#		programa de benchmark.  					#																					#
 #                                                                               #
 # Uso: ./install-dependencies.sh                                                #
 #                                                                               #
 #################################################################################
 
+# Verifica existência da pasta resultados, utilizada para armazenar os arquivos .csv
+if [[ ! -d "resoruces/resultados" ]]; then
+	mkdir resources/resultados
+	chmod 775 resources/resultados
+fi
+
+# Verifica se o gerenciador de pacotes pip3 está instalado, caso contrário realiza a instalação
 if [[ ! $(which pip3) ]]; then
 	echo "Baixando pip..."
 	echo
@@ -23,6 +30,13 @@ if [[ ! $(which pip3) ]]; then
 	echo "Instalando pip..."
 	echo
 	sudo python3 get-pip.py
+	
+	# Verifica se o comando anterior, que tenta fazer a instalação através do arquivo baixado, foi bem sucedido
+	# Caso contrário realiza a instalação pelo apt
+	if [[ $? -ne 0 ]]; then
+		sudo apt -y install python3-pip
+	fi
+	
 	rm get-pip.py
 	echo "Instalação concluída!"
 	echo
@@ -32,14 +46,21 @@ if [[ $(which pip3) ]]; then
 	if [[ ! $(pip3 list | grep numpy) ]]; then
 		echo "Instalando módulo numpy..."
 		echo
-		pip3 install numpy
+		sudo pip3 install numpy
 		echo "Instalação de módulo concluída!"
 		echo
 	fi
 	if [[ ! $(pip3 list | grep matplotlib) ]]; then
 		echo "Instalando módulo matplotlib..."
 		echo
-		pip3 install matplotlib
+		sudo pip3 install matplotlib
+		echo "Instalação de módulo concluída!"
+		echo
+	fi
+	if [[ ! $(pip3 list | grep pandas) ]]; then
+		echo "Instalando módulo pandas..."
+		echo
+		sudo pip3 install pandas
 		echo "Instalação de módulo concluída!"
 		echo
 	fi
