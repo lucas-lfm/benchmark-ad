@@ -15,7 +15,7 @@
 #################################################################################
 
 # Verifica existência da pasta resultados, utilizada para armazenar os arquivos .csv
-if [[ ! -d "resoruces/resultados" ]]; then
+if [[ ! -d "resources/resultados" ]]; then
 	mkdir resources/resultados
 	chmod 775 resources/resultados
 fi
@@ -37,7 +37,7 @@ if [[ ! $(which pip3) ]]; then
 		sudo apt -y install python3-pip
 	fi
 	
-	rm get-pip.py
+	rm -f get-pip.py
 	echo "Instalação concluída!"
 	echo
 fi
