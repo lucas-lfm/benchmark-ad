@@ -35,7 +35,7 @@ As cargas de trabalho são divididas em 3 níveis como a seguir:
 
 PROCESSO DE INSTALAÇÃO
 
-A instalação é muito simples, basta baixar os arquivos na estrutura que aparecem aqui e tornar os scripts executáveis. Após isso, execute o script "benchmark-ad.sh [repeticoes] [nivel]" na pasta principal. O parâmentro [repeticoes] é um número inteiro que define a quantidade de repetições para os testes de desempenho. Já o parâmetro [nivel] é um número inteiro entre 1 e 3, que define o nível da carga de trabalho a ser aplicada aos testes (1 - Baixo, 2 - Moderado, 3 - Alto).
+A instalação é muito simples, basta baixar os arquivos na estrutura em que aparecem aqui e tornar os scripts executáveis. Após isso, execute o script "benchmark-ad.sh [repeticoes] [nivel]" na pasta principal. O parâmentro [repeticoes] é um número inteiro que define a quantidade de repetições para os testes de desempenho. Já o parâmetro [nivel] é um número inteiro entre 1 e 3, que define o nível da carga de trabalho a ser aplicada aos testes (1 - Baixo, 2 - Moderado, 3 - Alto).
   
 Ao executar o script principal, automaticamente será feita a verificação das dependências necessárias, em caso de não encontrar os pacotes necessários o programa faz o download e instalação das dependências. São elas:
 
